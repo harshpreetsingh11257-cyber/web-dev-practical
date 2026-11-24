@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kharcha Manager</title>
+<link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+    <h1>Kharcha Manager</h1>
+    <p class="subtitle">Manage your daily expenses easily</p>
+    <div class="expense-form">
+    
+    <label for="Expenses">Choose the type of expense: </label>
+    <select id ="expenses" name="expenses">
+        <option value="">Select Expense</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Education">Education</option>        
+        <option value="Others">Others</option>
+    </select>
+    <br>
+    <p>Enter Amount</p><input type="number" id="amount" placeholder="Enter Amount"></input>
+    <br>
+    <button onclick="submit()">Submit</button>
+    </div>
+            <div class="total-box">
+
+            <h2>Total Expenses</h2>
+
+            <h1 id="totalAmount">₹0</h1>
+
+        </div>
+
+        <div class="filter">
+
+            <label>Filter by Category:</label>
+
+            <select id="filterCategory" onchange="displayExpenses()">
+
+                <option value="All">All Categories</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Education">Education</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="expense-list">
+
+            <h2>Your Expenses</h2>
+
+            <div id="expenseList">
+
+                <p>No expenses added yet.</p>
+
+            </div>
+
+        </div>
+
+</body>
+</html>

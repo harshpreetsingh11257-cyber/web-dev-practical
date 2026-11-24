@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    padding: 30px;
+}
+
+.container{
+    max-width: 650px;
+    margin: auto;
+    background: beige;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px;
+}
+
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+.subtitle{
+    text-align: center;
+    color: gray;
+    margin: 10px 0 25px;
+}
+
+.expense-form{
+    background: lightcyan;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.total-box {
+    background: #dbeafe;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.total-box h1 {
+    color: #16a34a;
+    margin-top: 10px;
+}
+
+.filter {
+    margin: 20px 0;
+}
+
+.filter label {
+    font-weight: bold;
+}
+
+.expense-list {
+    margin-top: 20px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f5f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.expense-details {
+    flex: 1;
+}
+
+.expense-details h3 {
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+.expense-details p {
+    color: #555;
+    font-size: 14px;
+}
+
+.delete-btn {
+    width: auto;
+    background: #ef4444;
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .expense-item {
+        flex-wrap: wrap;
+    }
+
+}
